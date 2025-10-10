@@ -1,2 +1,0 @@
-<?php require '../includes/auth.php'; require '../includes/db.php'; require '../includes/header.php'; if($_SESSION['role']!=='admin'){ echo '<div class="card">คุณไม่มีสิทธิ์</div>'; require '../includes/footer.php'; exit(); } ?>
-<div class="card"><h3>Admin Dashboard</h3><div style="display:flex;gap:8px"><a class="btn" href="manage_places.php">จัดการสถานที่</a><a class="btn" href="manage_products.php">จัดการสินค้า</a><a class="btn" href="manage_users.php">จัดการผู้ใช้</a></div></div><?php require '../includes/footer.php'; ?>
